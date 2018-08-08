@@ -17,7 +17,7 @@
         <h1>Survey</h1>
       </div>
       <div class="container">
-        <form>
+        <form id="survey">
           <div class="problemSet form-group">
             <label for="name">What's your name?</label>
             <input type="text" id="name" class="form-control">
@@ -41,22 +41,22 @@
             <label for="movie">What kind of movie do you like?</label>
             <div class="radio" id="movie">
               <label>
-                <input type="radio" name="genre" value="horror" checked>
+                <input type="radio" name="genre" value="Horror" checked>
                 Horror
               </label>
               &nbsp;
               <label>
-                <input type="radio" name="genre" value="comedy">
+                <input type="radio" name="genre" value="Comedy">
                 Comedy
               </label>
               &nbsp;
               <label>
-                <input type="radio" name="genre" value="action">
+                <input type="radio" name="genre" value="Action">
                 Action
               </label>
               &nbsp;
               <label>
-                <input type="radio" name="genre" value="scifi">
+                <input type="radio" name="genre" value="Scifi">
                 Scifi
               </label>
             </div>
@@ -71,6 +71,14 @@
           </div>
           <button type="submit" class="btn" id="submitButton">Submit</button>
         </form>
+      </div>
+      <div class="container" id="surveyAnswer">
+        <p class="name"></p>
+        <p class="food"></p>
+        <p class="music"></p>
+        <p class="movie"></p>
+        <p class="color"></p>
+        <p class="date"></p>
       </div>
     </div>
   </body>
